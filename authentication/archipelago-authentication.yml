@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.onarchipelago.com/api
+docs: https://docs.onarchipelago.com/api
+notes: >-
+  Archipelago's public-facing API is a GraphQL API. Per Archipelago's documentation, access is
+  credential-based: Archipelago provisions credentials to customers, who use them to authenticate
+  to the Archipelago API. The API reference and the exact credential/header mechanics sit behind
+  the authenticated platform (docs.onarchipelago.com/api requires a magic-link login), so the
+  low-level scheme details are not publicly enumerable. No public OpenAPI is published; this
+  profile is derived from Archipelago's published statements about API access, not a machine-read
+  security scheme. The end-user platform (platform.onarchipelago.com) itself signs users in via a
+  passwordless magic-link email flow.
+summary:
+  types:
+  - credential
+  api_style: graphql
+  credential_provisioning: customer-provisioned-by-vendor
+  public_openapi: false
+schemes:
+- name: ArchipelagoAPICredentials
+  type: apiKey
+  description: >-
+    Customer-specific credentials issued by Archipelago, presented when calling the GraphQL API.
+    Exact header/parameter name is documented behind the authenticated developer docs.
+  sources:
+  - https://docs.onarchipelago.com/api
