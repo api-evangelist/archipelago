@@ -1,8 +1,14 @@
 aid: archipelago
 name: Archipelago
-description: Archipelago is a company surfaced as a portfolio company of canaan-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Archipelago is a San Francisco-based insurtech company, founded in 2018, that operates an
+  AI-powered platform and agent for property and casualty (P&C) insurance risk data. Its software
+  helps commercial property owners, brokers, and insurance underwriters ingest, remediate, enrich,
+  and centralize Statement of Values (SOV) data and property documents, making risk information
+  model-ready for submission to insurance markets. Archipelago exposes a customer-facing GraphQL
+  API so customers can use their property data in custom applications, and the platform holds a
+  SOC 2 Type 2 attestation. The company is backed by Canaan Partners, Scale Venture Partners,
+  Ignition Partners, Prologis Ventures, Stone Point Capital, and Zigg Capital.
 url: https://raw.githubusercontent.com/api-evangelist/archipelago/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +16,97 @@ x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://platform.onarchipelago.com/android-chrome-256x256.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Insurance
+- Insurtech
+- Property Risk
+- Underwriting
+- Risk Management
+- Commercial Property
+- GraphQL
+- Data
+- AI Agent
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Archipelago GraphQL API
+  description: >-
+    Archipelago's customer-facing API is a GraphQL API that lets customers access and use their
+    property and SOV data in custom applications. Access is credential-based; Archipelago provisions
+    credentials to customers to authenticate to the API. The API and its reference documentation
+    sit behind the authenticated platform.
+  humanURL: https://docs.onarchipelago.com/api
+  baseURL: https://api.onarchipelago.com/graphql
+  tags:
+  - GraphQL
+  - Insurance
+  - Property Risk
+  properties:
+  - type: Authentication
+    url: authentication/archipelago-authentication.yml
+common:
+- type: Website
+  url: https://www.onarchipelago.com
+- type: DeveloperPortal
+  url: https://docs.onarchipelago.com/
+- type: Documentation
+  url: https://docs.onarchipelago.com/
+- type: APIReference
+  url: https://docs.onarchipelago.com/api
+- type: GettingStarted
+  url: https://docs.onarchipelago.com/get-started-with-archipelago
+- type: Blog
+  url: https://www.onarchipelago.com/blog
+- type: Support
+  url: https://www.onarchipelago.com/contact-us
+- type: SignUp
+  url: https://platform.onarchipelago.com
+- type: Login
+  url: https://platform.onarchipelago.com
+- type: TermsOfService
+  url: https://www.onarchipelago.com/user-terms-of-service
+- type: PrivacyPolicy
+  url: https://www.onarchipelago.com/customers/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/onarchipelago
+- type: LinkedIn
+  url: https://www.linkedin.com/company/onarchipelago
+- type: Twitter
+  url: https://twitter.com/OnArchipelago
+- type: Security
+  url: https://www.onarchipelago.com/security
+- type: Compliance
+  url: https://www.onarchipelago.com/security
+- type: LLMsTxt
+  url: llms/archipelago-llms.txt
+- type: Authentication
+  url: authentication/archipelago-authentication.yml
+- type: Conformance
+  url: conformance/archipelago-conformance.yml
+- type: DomainSecurity
+  url: security/archipelago-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

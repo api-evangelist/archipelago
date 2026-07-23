@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.onarchipelago.com/security
+compliance:
+  published: true
+  page: https://www.onarchipelago.com/security
+  programs:
+  - id: soc2-type2
+    name: SOC 2 Type 2
+    status: attested
+    since: '2023'
+    scope: platform-wide
+    evidence: >-
+      "Archipelago has acquired its SOC 2 Type 2 attestation across the platform in 2023."
+      (https://www.onarchipelago.com/security)
+standards:
+- id: soc2-type2
+  conforms: true
+  evidence: SOC 2 Type 2 attestation stated on the Archipelago security page (2023)
+- id: graphql
+  conforms: true
+  evidence: Archipelago's public API is documented as a GraphQL API
+- id: oauth2
+  conforms: false
+  evidence: no public OpenAPI or documented OAuth2 authorization server; API access is credential-based
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no public API spec available to confirm error format
+- id: iso27001
+  conforms: false
+  evidence: not claimed on the security page
+- id: pci-dss
+  conforms: false
+  evidence: not applicable / not claimed
+- id: hipaa
+  conforms: false
+  evidence: not claimed

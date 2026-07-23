@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.onarchipelago.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  9 21:32:41 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: docs.onarchipelago.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 22 08:15:35 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: api.onarchipelago.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 23 23:59:59 2026 GMT
+  hsts: null
+domains:
+- domain: onarchipelago.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
