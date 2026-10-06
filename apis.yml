@@ -43,7 +43,7 @@ accessModel:
 image: https://platform.onarchipelago.com/android-chrome-256x256.png
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-10-06'
 tags:
 - Company
 - Insurance
@@ -88,6 +88,8 @@ apis:
   - type: Authentication
     url: authentication/archipelago-authentication.yml
 common:
+- url: https://www.onarchipelago.com/blog/rss.xml
+  type: BlogRSS
 - type: Website
   url: https://www.onarchipelago.com
 - type: DeveloperPortal
